@@ -1,0 +1,56 @@
+<?php
+// +----------------------------------------------------------------------
+// | ThinkPHP [ WE CAN DO IT JUST THINK ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2006~2016 http://thinkphp.cn All rights reserved.
+// +----------------------------------------------------------------------
+// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+// +----------------------------------------------------------------------
+// | Author: liu21st <liu21st@gmail.com>
+// +----------------------------------------------------------------------
+
+//return [
+//    '__pattern__' => [
+//        'name' => '\w+',
+//    ],
+//    '[hello]'     => [
+//        ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
+//        ':name' => ['index/hello', ['method' => 'post']],
+//    ],
+//
+//];
+use think\Route;
+//动态注册路由规则
+//Route::rule('路由表达式','路由地址','请求类型','路由参数(数组)','变量规则(数组)');
+
+Route::get('/',function(){
+    return 'Hello,world!';
+});
+
+Route::get(['new','new/[:id]$'],'@index/News/read');//[]是可选项，$ 完全匹配
+//Route::miss('index/Index/miss');  //没有匹配的路由时执行
+Route::get('hello/[:name]',function($name='猴哥'){//闭包写法
+    return 'Hello,'.$name.'!';
+//    return url('index/blog/read','id=5&name=thinkphp');//生成url
+});
+
+//变量规则
+Route::pattern('name','\d+');//设置全局变量规则
+Route::get('new/:name','News/read',[],['name'=>'\w+']);//局部变量规则
+Route::get('new/:id','News/read',[],['__url__'=>'new\/\w+$']);//完整url规则
+
+//路由别名
+Route::alias('user','index/User',[//缩短路由
+    'ext'=>'html',//设置条件
+    'allow'=>'aaa',//设置白名单
+//    'except'=>'aaa',//设置黑名单
+    'method'=>['aaa'=>'GET','bbb'=>'POST','ccc'=>'DELETE'],//设置请求类型
+]);
+
+//路由分组(允许把相同前缀的路由定义合并分组，这样可以提高路由匹配的效率，不必每次都去遍历完整的路由规则。)
+Route::group('blog',[
+    ':id'   => ['Blog/read', ['method' => 'put'], ['id' => '\d+']],
+    ':name' => ['Blog/read', ['method' => 'post']],
+]);
+
+Route::resource('oauth2','oauth2/Index');
