@@ -35,7 +35,7 @@ final class UploadManager
      * @param $checkCrc   是否校验crc32
      *
      * @return array    包含已上传文件的信息，类似：
-     *                                              [
+     *                                              `  [
      *                                                  "hash" => "<Hash string>",
      *                                                  "key" => "<Key string>"
      *                                              ]
