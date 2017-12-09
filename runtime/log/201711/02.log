@@ -1,0 +1,1708 @@
+---------------------------------------------------------------
+[ 2017-11-02T22:24:20+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/new
+[ info ] www.phoneapp.com/index.php/new [运行时间：0.491671s][吞吐率：2.03req/s] [内存消耗：1,509.55kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'index/News/read',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Huiskin=default; thinkphp_show_page_trace=0|5; pgv_pvi=8775854080; pgv_si=s3407113216; PHPSESSID=77p5amr4v6k3e1lamq7056tm14; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509430665; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509498837',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3218.0 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] app\index\controller\News->read[ D:\phpStudy\WWW\phone_app\application\index\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T22:24:26+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/news/hello.html
+[ info ] www.phoneapp.com/index.php/index/news/hello.html [运行时间：0.193119s][吞吐率：5.18req/s] [内存消耗：1,455.51kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=1|0; thinkphp_show_page_trace=0|0; Huiskin=default; thinkphp_show_page_trace=0|0; pgv_pvi=8775854080; pgv_si=s3407113216; PHPSESSID=77p5amr4v6k3e1lamq7056tm14; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509430665; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509498837',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.phoneapp.com/index.php/new',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3218.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->hello[ D:\phpStudy\WWW\phone_app\application\index\controller\News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T22:24:38+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin
+[ info ] www.phoneapp.com/index.php/admin [运行时间：0.175330s][吞吐率：5.70req/s] [内存消耗：1,755.96kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|5; Huiskin=default; thinkphp_show_page_trace=0|0; pgv_pvi=8775854080; pgv_si=s3407113216; PHPSESSID=77p5amr4v6k3e1lamq7056tm14; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509430665; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509498837',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3218.0 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\phone_app\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T22:24:38+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/welcome.html
+[ info ] www.phoneapp.com/index.php/admin/index/welcome.html [运行时间：0.039958s][吞吐率：25.03req/s] [内存消耗：1,706.55kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Huiskin=default; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|5; Huiskin=default; thinkphp_show_page_trace=0|0; pgv_pvi=8775854080; pgv_si=s3407113216; PHPSESSID=77p5amr4v6k3e1lamq7056tm14; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509430665; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509498837',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.phoneapp.com/index.php/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3218.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\phone_app\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T22:24:46+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/add.html
+[ info ] www.phoneapp.com/index.php/admin/news/add.html [运行时间：0.085456s][吞吐率：11.70req/s] [内存消耗：1,884.18kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|5; thinkphp_show_page_trace=0|5; Huiskin=default; thinkphp_show_page_trace=0|5; pgv_pvi=8775854080; pgv_si=s3407113216; PHPSESSID=77p5amr4v6k3e1lamq7056tm14; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509430665; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509632679',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.phoneapp.com/index.php/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3218.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\News->add[ D:\phpStudy\WWW\phone_app\application\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\news\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T22:25:43+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.phoneapp.com/ [运行时间：0.110555s][吞吐率：9.05req/s] [内存消耗：1,223.84kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'function',
+  'function' => 
+  Closure::__set_state(array(
+  )),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Closure [ <user> static public method {closure} ] {
+  @@ D:\phpStudy\WWW\phone_app\application\route.php 26 - 28
+}
+
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T22:26:00+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin
+[ info ] www.phoneapp.com/index.php/admin [运行时间：0.059290s][吞吐率：16.87req/s] [内存消耗：1,465.97kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T22:26:00+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/login/index.html
+[ info ] www.phoneapp.com/index.php/admin/login/index.html [运行时间：0.054434s][吞吐率：18.37req/s] [内存消耗：1,511.32kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\phone_app\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T22:26:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/captcha
+[ info ] www.phoneapp.com/index.php/captcha [运行时间：0.515925s][吞吐率：1.94req/s] [内存消耗：1,223.10kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/login/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\phone_app\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T22:26:13+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/login/check.html
+[ info ] www.phoneapp.com/index.php/admin/login/check.html [运行时间：0.400801s][吞吐率：2.50req/s] [内存消耗：2,433.20kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.phoneapp.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'captcha' => 'bnbh4',
+)
+[ info ] [ RUN ] app\admin\controller\Login->check[ D:\phpStudy\WWW\phone_app\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061822s ] mysql:host=127.0.0.1;port=3306;dbname=myapp_blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ent_admin_user` [ RunTime:0.091932s ]
+[ sql ] [ SQL ] SELECT * FROM `ent_admin_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.002643s ]
+[ sql ] [ SQL ] UPDATE `ent_admin_user`  SET `last_login_time`=1509632773,`last_login_ip`='127.0.0.1',`update_time`=1509632773  WHERE  `id` = 5 [ RunTime:0.003073s ]
+---------------------------------------------------------------
+[ 2017-11-02T22:26:16+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/index.html
+[ info ] www.phoneapp.com/index.php/admin/index/index.html [运行时间：0.089746s][吞吐率：11.14req/s] [内存消耗：1,755.82kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/login/check.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\phone_app\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T22:26:16+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/welcome.html
+[ info ] www.phoneapp.com/index.php/admin/index/welcome.html [运行时间：0.062623s][吞吐率：15.97req/s] [内存消耗：1,705.73kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\phone_app\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T22:26:39+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/add.html
+[ info ] www.phoneapp.com/index.php/admin/news/add.html [运行时间：0.064426s][吞吐率：15.52req/s] [内存消耗：1,755.57kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509632777',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\News->add[ D:\phpStudy\WWW\phone_app\application\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\news\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T22:26:48+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/
+[ info ] www.phoneapp.com/index.php/admin/news/ [运行时间：0.138520s][吞吐率：7.22req/s] [内存消耗：1,715.70kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509632777',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/news/add.html',
+  'accept' => '*/*',
+  'x-requested-with' => 'ShockwaveFlash/23.9.9.999',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T22:26:51+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/add.html
+[ info ] www.phoneapp.com/index.php/admin/news/add.html [运行时间：0.033116s][吞吐率：30.20req/s] [内存消耗：1,755.84kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509632777',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\News->add[ D:\phpStudy\WWW\phone_app\application\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\news\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T22:26:52+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/
+[ info ] www.phoneapp.com/index.php/admin/news/ [运行时间：0.065681s][吞吐率：15.23req/s] [内存消耗：1,715.70kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509632777',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/news/add.html',
+  'accept' => '*/*',
+  'x-requested-with' => 'ShockwaveFlash/23.9.9.999',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T22:27:04+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/image/upload.html
+[ info ] www.phoneapp.com/index.php/admin/image/upload.html [运行时间：0.176743s][吞吐率：5.66req/s] [内存消耗：1,588.34kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'image',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509632777',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/news/add.html',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----------KM7gL6KM7gL6KM7cH2ei4GI3ei4Ij5',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'x-requested-with' => 'ShockwaveFlash/23.9.9.999',
+  'origin' => 'http://www.phoneapp.com',
+  'content-length' => '23321',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => 'three.png',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Image->upload[ D:\phpStudy\WWW\phone_app\application\admin\controller\Image.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:38:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/index.html
+[ info ] www.phoneapp.com/index.php/admin/index/index.html [运行时间：0.501516s][吞吐率：1.99req/s] [内存消耗：1,756.45kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509632777',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/login/check.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\phone_app\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:38:43+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/welcome.html
+[ info ] www.phoneapp.com/index.php/admin/index/welcome.html [运行时间：0.102704s][吞吐率：9.74req/s] [内存消耗：1,706.20kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509632777',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\phone_app\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:38:48+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/add.html
+[ info ] www.phoneapp.com/index.php/admin/news/add.html [运行时间：0.078081s][吞吐率：12.81req/s] [内存消耗：1,755.84kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637123',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\News->add[ D:\phpStudy\WWW\phone_app\application\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\news\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:38:50+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/
+[ info ] www.phoneapp.com/index.php/admin/news/ [运行时间：0.136993s][吞吐率：7.30req/s] [内存消耗：1,715.70kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637123',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/news/add.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'x-requested-with' => 'ShockwaveFlash/23.9.9.999',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:39:28+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/image/upload.html
+[ info ] www.phoneapp.com/index.php/admin/image/upload.html [运行时间：0.050301s][吞吐率：19.88req/s] [内存消耗：1,706.80kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'image',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637123',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/news/add.html',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----------Ij5GI3GI3ei4Ef1ae0cH2Ij5ae0gL6',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'x-requested-with' => 'ShockwaveFlash/23.9.9.999',
+  'origin' => 'http://www.phoneapp.com',
+  'content-length' => '23321',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => 'three.png',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Image->upload[ D:\phpStudy\WWW\phone_app\application\admin\controller\Image.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:40:30+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/image/upload.html
+[ info ] www.phoneapp.com/index.php/admin/image/upload.html [运行时间：0.047671s][吞吐率：20.98req/s] [内存消耗：1,706.80kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'image',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637123',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/news/add.html',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----------Ef1GI3KM7GI3ae0Ef1ei4gL6ae0Ef1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'x-requested-with' => 'ShockwaveFlash/23.9.9.999',
+  'origin' => 'http://www.phoneapp.com',
+  'content-length' => '23321',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => 'three.png',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Image->upload[ D:\phpStudy\WWW\phone_app\application\admin\controller\Image.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:42:58+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/index.html
+[ info ] www.phoneapp.com/index.php/admin/index/index.html [运行时间：0.043157s][吞吐率：23.17req/s] [内存消耗：1,756.34kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637123',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/login/check.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\phone_app\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:42:59+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/welcome.html
+[ info ] www.phoneapp.com/index.php/admin/index/welcome.html [运行时间：0.061909s][吞吐率：16.15req/s] [内存消耗：1,706.20kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637123',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\phone_app\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:43:07+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/add.html
+[ info ] www.phoneapp.com/index.php/admin/news/add.html [运行时间：0.059822s][吞吐率：16.72req/s] [内存消耗：1,755.84kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637379',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\News->add[ D:\phpStudy\WWW\phone_app\application\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\news\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:43:08+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/
+[ info ] www.phoneapp.com/index.php/admin/news/ [运行时间：0.068338s][吞吐率：14.63req/s] [内存消耗：1,715.70kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637379',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/news/add.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'x-requested-with' => 'ShockwaveFlash/23.9.9.999',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:52:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/add.html
+[ info ] www.phoneapp.com/index.php/admin/news/add.html [运行时间：0.110495s][吞吐率：9.05req/s] [内存消耗：1,889.57kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637379',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\News->add[ D:\phpStudy\WWW\phone_app\application\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\news\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:52:03+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/
+[ info ] www.phoneapp.com/index.php/admin/news/ [运行时间：0.058196s][吞吐率：17.18req/s] [内存消耗：1,715.70kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637379',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/news/add.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'x-requested-with' => 'ShockwaveFlash/23.9.9.999',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:52:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/add.html
+[ info ] www.phoneapp.com/index.php/admin/news/add.html [运行时间：0.035214s][吞吐率：28.40req/s] [内存消耗：1,759.80kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637379',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\News->add[ D:\phpStudy\WWW\phone_app\application\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\news\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:52:13+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/
+[ info ] www.phoneapp.com/index.php/admin/news/ [运行时间：0.070764s][吞吐率：14.13req/s] [内存消耗：1,715.70kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637379',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/news/add.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'x-requested-with' => 'ShockwaveFlash/23.9.9.999',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:52:57+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/image/upload.html
+[ info ] www.phoneapp.com/index.php/admin/image/upload.html [运行时间：0.044798s][吞吐率：22.32req/s] [内存消耗：1,706.80kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'image',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637379',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/news/add.html',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----------ae0KM7gL6cH2Ij5KM7Ef1gL6cH2gL6',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'x-requested-with' => 'ShockwaveFlash/23.9.9.999',
+  'origin' => 'http://www.phoneapp.com',
+  'content-length' => '23321',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => 'three.png',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Image->upload[ D:\phpStudy\WWW\phone_app\application\admin\controller\Image.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:53:09+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/index.html
+[ info ] www.phoneapp.com/index.php/admin/index/index.html [运行时间：0.065302s][吞吐率：15.31req/s] [内存消耗：1,881.41kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637379',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/login/check.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\phone_app\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:53:09+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/welcome.html
+[ info ] www.phoneapp.com/index.php/admin/index/welcome.html [运行时间：0.057783s][吞吐率：17.31req/s] [内存消耗：1,706.20kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637379',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\phone_app\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:53:14+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/add.html
+[ info ] www.phoneapp.com/index.php/admin/news/add.html [运行时间：0.042620s][吞吐率：23.46req/s] [内存消耗：1,759.80kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637990',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\News->add[ D:\phpStudy\WWW\phone_app\application\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\news\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:53:15+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/
+[ info ] www.phoneapp.com/index.php/admin/news/ [运行时间：0.057006s][吞吐率：17.54req/s] [内存消耗：1,715.70kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637990',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/news/add.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'x-requested-with' => 'ShockwaveFlash/23.9.9.999',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:53:53+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/add.html
+[ info ] www.phoneapp.com/index.php/admin/news/add.html [运行时间：0.036619s][吞吐率：27.31req/s] [内存消耗：1,759.80kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637990',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\News->add[ D:\phpStudy\WWW\phone_app\application\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\news\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:53:55+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/
+[ info ] www.phoneapp.com/index.php/admin/news/ [运行时间：0.069090s][吞吐率：14.47req/s] [内存消耗：1,715.70kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637990',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/news/add.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'x-requested-with' => 'ShockwaveFlash/23.9.9.999',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:54:05+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/index.html
+[ info ] www.phoneapp.com/index.php/admin/index/index.html [运行时间：0.053055s][吞吐率：18.85req/s] [内存消耗：1,756.63kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637990',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/login/check.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\phone_app\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:54:06+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/welcome.html
+[ info ] www.phoneapp.com/index.php/admin/index/welcome.html [运行时间：0.055396s][吞吐率：18.05req/s] [内存消耗：1,706.46kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509637990',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\phone_app\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:54:31+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/add.html
+[ info ] www.phoneapp.com/index.php/admin/news/add.html [运行时间：0.057566s][吞吐率：17.37req/s] [内存消耗：1,759.80kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509638047',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\News->add[ D:\phpStudy\WWW\phone_app\application\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\news\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:54:32+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/
+[ info ] www.phoneapp.com/index.php/admin/news/ [运行时间：0.078366s][吞吐率：12.76req/s] [内存消耗：1,715.70kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509638047',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/news/add.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'x-requested-with' => 'ShockwaveFlash/23.9.9.999',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:57:03+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/add.html
+[ info ] www.phoneapp.com/index.php/admin/news/add.html [运行时间：0.056007s][吞吐率：17.85req/s] [内存消耗：1,889.55kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509638047',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\News->add[ D:\phpStudy\WWW\phone_app\application\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\news\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:57:05+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/
+[ info ] www.phoneapp.com/index.php/admin/news/ [运行时间：0.067263s][吞吐率：14.87req/s] [内存消耗：1,715.70kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509638047',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/news/add.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'x-requested-with' => 'ShockwaveFlash/23.9.9.999',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:58:03+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/add.html
+[ info ] www.phoneapp.com/index.php/admin/news/add.html [运行时间：0.113399s][吞吐率：8.82req/s] [内存消耗：1,889.56kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509638047',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\News->add[ D:\phpStudy\WWW\phone_app\application\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\news\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:58:04+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/news/
+[ info ] www.phoneapp.com/index.php/admin/news/ [运行时间：0.073241s][吞吐率：13.65req/s] [内存消耗：1,715.70kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509638047',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/news/add.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'x-requested-with' => 'ShockwaveFlash/23.9.9.999',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-02T23:58:21+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/image/upload.html
+[ info ] www.phoneapp.com/index.php/admin/image/upload.html [运行时间：0.052466s][吞吐率：19.06req/s] [内存消耗：1,706.89kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'image',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5575okbsmfahib6p5g0jjk0p2; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509464859,1509632777; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509638047',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/news/add.html',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----------Ef1GI3gL6Ij5Ef1GI3cH2KM7Ij5ae0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3538.400 QQBrowser/9.6.12501.400',
+  'x-requested-with' => 'ShockwaveFlash/23.9.9.999',
+  'origin' => 'http://www.phoneapp.com',
+  'content-length' => '38015',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => 'one.png',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Image->upload[ D:\phpStudy\WWW\phone_app\application\admin\controller\Image.php ]
+[ info ] [ LOG ] INIT File

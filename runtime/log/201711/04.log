@@ -1,0 +1,40 @@
+---------------------------------------------------------------
+[ 2017-11-04T10:27:04+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/image/upload.html
+[ info ] www.phoneapp.com/index.php/admin/image/upload.html [运行时间：0.164854s][吞吐率：6.07req/s] [内存消耗：1,725.13kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'image',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|5; Huiskin=default; thinkphp_show_page_trace=0|5; pgv_pvi=8775854080; pgv_si=s3407113216; PHPSESSID=77p5amr4v6k3e1lamq7056tm14; thinkphp_show_page_trace=0|0; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509430665; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509714181',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/news/add.html',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----------Ij5ei4ae0cH2cH2ei4GI3cH2gL6cH2',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3218.0 Safari/537.36',
+  'x-requested-with' => 'ShockwaveFlash/27.0.0.183',
+  'origin' => 'http://www.phoneapp.com',
+  'content-length' => '66128',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => '屏幕截图(3).png',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Image->upload[ D:\phpStudy\WWW\phone_app\application\admin\controller\Image.php ]
+[ info ] [ LOG ] INIT File

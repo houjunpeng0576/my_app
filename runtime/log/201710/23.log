@@ -1,0 +1,71 @@
+---------------------------------------------------------------
+[ 2017-10-23T09:03:06+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/index.html
+[ info ] www.phoneapp.com/index.php/admin/index/index.html [运行时间：0.281610s][吞吐率：3.55req/s] [内存消耗：1,756.26kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|5; Huiskin=default; thinkphp_show_page_trace=0|5; pgv_pvi=8775854080; pgv_si=s3407113216; PHPSESSID=77p5amr4v6k3e1lamq7056tm14; Hm_lvt_080836300300be57b7f34f4b3e97d911=1506614411; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1508681891',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3218.0 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\phone_app\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\phone_app\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-23T09:03:07+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/welcome.html
+[ info ] www.phoneapp.com/index.php/admin/index/welcome.html [运行时间：0.043935s][吞吐率：22.76req/s] [内存消耗：1,706.49kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\WWW\phone_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|5; Huiskin=default; thinkphp_show_page_trace=0|5; pgv_pvi=8775854080; pgv_si=s3407113216; PHPSESSID=77p5amr4v6k3e1lamq7056tm14; Hm_lvt_080836300300be57b7f34f4b3e97d911=1506614411; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1508681891',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.phoneapp.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3218.0 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.phoneapp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\phone_app\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
