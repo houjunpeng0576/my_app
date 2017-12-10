@@ -28,6 +28,21 @@ class Image extends Base
      * 七牛云上传图片
      */
     public function qiniuUpload(){
-        $image = Upload::image();
+        try{
+            $image = Upload::image();
+        }catch (\Exception $e){
+            exit(json_encode(array('status'=>'0','message'=>$e->getMessage())));
+        }
+
+        if($image){
+           $data = array(
+               'status' => '1',
+               'message' => '上传成功',
+               'data' => config('qiniu.image_url').'/'.$image
+           );
+           exit(json_encode($data));
+        }else{
+            exit(json_encode(array('status'=>'0','message'=>'上传失败')));
+        }
     }
 }

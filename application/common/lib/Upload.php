@@ -19,10 +19,28 @@ class Upload{
         if(empty($_FILES['file']['tmp_name'])){
             exception('您提交的图片数据不合法',404);
         }
+        //要上传的文件
+        $file = $_FILES['file']['tmp_name'];
+
+        //获取欧文件后缀
+        $ext = explode('.',$_FILES['file']['name']);
+        $ext = $ext[1];
 
         $config = config('qiniu');
         //构建一个鉴权对象
         $auth = new Auth($config['ak'],$config['sk']);
         //生成上传的token
+        $token = $auth->uploadToken($config['bucket']);
+        //上传到七牛后保存的文件名
+        $key = date('Y').'/'.date('m').'/'.substr(md5($file),0,5).date('YmdHis').rand(0,9999).'.'.$ext;
+
+        //初始化UploadManager类
+        $uploadManager = new UploadManager();
+        list($ret,$err) = $uploadManager->putFile($token,$key,$file);
+        if($err !== null){
+            return null;
+        }else{
+            return $key;
+        }
     }
 }
