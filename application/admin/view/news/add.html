@@ -1,34 +1,33 @@
 {include file="public/_meta"}
 <div class="page-container">
-    <form action="" method="post" class="form form-horizontal" id="form-article-add">
+    <form method="post" class="form form-horizontal" id="form-news-add" url="{:url('news/add')}">
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>产品标题：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="">
+                <input type="text" class="input-text" value="" placeholder="" id="title" name="title">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">简略标题：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="">
+                <input type="text" class="input-text" value="" placeholder="" id="small_title" name="small_title">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>分类栏目：</label>
             <div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
-				<select name="" class="select">
-					<option value="0">一级分类</option>
-					<option value="1">一级分类</option>
-					<option value="11">├二级分类</option>
-					<option value="12">├二级分类</option>
-					<option value="13">├二级分类</option>
+				<select name="catid" class="select" id="cat">
+                    {volist name="cats" id="vo"}
+                    <option value="{$key}">{$vo}</option>
+                    {/volist}
+					<!--<option value="11">├二级分类</option>-->
 				</select>
 				</span> </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">文章摘要：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <textarea name="" cols="" rows="" class="textarea"  placeholder="说点什么...最少输入10个字符" datatype="*10-100" dragonfly="true" nullmsg="备注不能为空！" onKeyUp="$.Huitextarealength(this,200)"></textarea>
+                <textarea name="description" id="description" class="textarea"  placeholder="说点什么...最少输入10个字符" datatype="*10-100" dragonfly="true" nullmsg="备注不能为空！" onKeyUp="$.Huitextarealength(this,200)"></textarea>
                 <p class="textarea-numberbar"><em class="textarea-length">0</em>/200</p>
             </div>
         </div>
@@ -36,7 +35,7 @@
             <label class="form-label col-xs-4 col-sm-2">允许评论：</label>
             <div class="formControls col-xs-8 col-sm-9 skin-minimal">
                 <div class="check-box">
-                    <input type="checkbox" id="checkbox-1">
+                    <input type="checkbox" id="checkbox-1" name="is_allowcomments" value="1">
                     <label for="checkbox-1">&nbsp;</label>
                 </div>
             </div>
@@ -45,7 +44,7 @@
             <label class="form-label col-xs-4 col-sm-2">是否推荐到首页头图：</label>
             <div class="formControls col-xs-8 col-sm-9 skin-minimal">
                 <div class="check-box">
-                    <input type="checkbox" id="checkbox-2">
+                    <input type="checkbox" id="checkbox-2" name="is_head_figure" value="1">
                     <label for="checkbox-2">&nbsp;</label>
                 </div>
             </div>
@@ -54,7 +53,7 @@
             <label class="form-label col-xs-4 col-sm-2">允许是否推荐：</label>
             <div class="formControls col-xs-8 col-sm-9 skin-minimal">
                 <div class="check-box">
-                    <input type="checkbox" id="checkbox-3">
+                    <input type="checkbox" id="checkbox-3" name="is_position" value="1">
                     <label for="checkbox-3">&nbsp;</label>
                 </div>
             </div>
@@ -62,7 +61,7 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">缩略图：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="file" id="file_upload" multiple="true" name="file">
+                <input type="file" id="file_upload" multiple="true" name="file" id="file" readonly nullmsg="请添加附件！">
                 <img src="" id="upload_org_code_img" width="150" height="150" style="display: none">
                 <input type="hidden" name="image" id="file_upload_image" multiple="true" value="">
             </div>
@@ -83,7 +82,7 @@
     </form>
 </div>
 
-{include file="public/_footer" /}
+{include file="public/_footer"}
 
 <!--请在下方写此页面业务相关的脚本-->
 <script type="text/javascript" src="__STATIC__/hui_admin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
@@ -95,6 +94,7 @@
 <script type="text/javascript" src="__STATIC__/hui_admin/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
 <script type="text/javascript" src="__STATIC__/admin/uploadify/jquery.uploadify.min.js"> </script>
 <script type="text/javascript" src="__STATIC__/admin/js/image.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/js/common.js"></script>
 <script type="text/javascript">
     $(function(){
         $('.skin-minimal input').iCheck({
@@ -104,8 +104,36 @@
         });
     });
 
+    //表单验证
+    $("#form-news-add").validate({
+        rules:{
+            title:{
+                required:true,
+            },
+            small_title:{
+                required:true,
+            },
+            file:{
+                required:true,
+            }
+        },
+        messages:{
+
+        },
+        onkeyup:false,
+        focusCleanup:true,
+        success:"valid",
+        submitHandler:function(form){
+            myapp_save(form);
+            //$(form).ajaxSubmit();
+            // var index = parent.layer.getFrameIndex(window.name);
+            //parent.$('.btn-refresh').click();
+            // parent.layer.close(index);
+        }
+    });
+
     $(function(){
-        var ue = UE.getEditor('editor');
+        var ue = UE.getEditor('editor',{textarea:'content'});
     });
 </script>
 </body>

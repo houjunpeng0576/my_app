@@ -38,11 +38,15 @@ class Image extends Base
            $data = array(
                'status' => '1',
                'message' => '上传成功',
-               'data' => config('qiniu.image_url').'/'.$image
+               'data' => config('qiniu.image_url').$image
            );
            exit(json_encode($data));
         }else{
             exit(json_encode(array('status'=>'0','message'=>'上传失败')));
         }
+    }
+
+    public function show(){
+        return $this->fetch();
     }
 }
