@@ -1,0 +1,218 @@
+---------------------------------------------------------------
+[ 2017-12-11T00:04:37+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/image/qiniuupload.html
+[ info ] www.myapp.com/index.php/admin/image/qiniuupload.html [运行时间：0.349342s][吞吐率：2.86req/s] [内存消耗：3,884.98kb] [文件加载：60]
+[ info ] [ LANG ] D:\wamp\www\demo\htdocs\my_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'image',
+    2 => 'qiniuupload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myapp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '516850',
+  'origin' => 'http://www.myapp.com',
+  'x-requested-with' => 'ShockwaveFlash/27.0.0.187',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.0 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----------Ij5Ef1Ef1GI3Ef1Ij5ae0ei4KM7Ef1',
+  'accept' => '*/*',
+  'referer' => 'http://www.myapp.com/index.php/admin/news/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=u4e3avaecsvf0khg806v803313; Hm_lvt_080836300300be57b7f34f4b3e97d911=1512877936; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1512921375',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => '欢迎扫描.jpg',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Image->qiniuUpload[ D:\wamp\www\demo\htdocs\my_app\application\admin\controller\Image.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-11T00:10:16+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/image/qiniuupload.html
+[ info ] www.myapp.com/index.php/admin/image/qiniuupload.html [运行时间：0.356353s][吞吐率：2.81req/s] [内存消耗：3,886.03kb] [文件加载：60]
+[ info ] [ LANG ] D:\wamp\www\demo\htdocs\my_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'image',
+    2 => 'qiniuupload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myapp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '516850',
+  'origin' => 'http://www.myapp.com',
+  'x-requested-with' => 'ShockwaveFlash/27.0.0.187',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.0 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----------GI3gL6Ef1GI3KM7GI3KM7gL6Ef1GI3',
+  'accept' => '*/*',
+  'referer' => 'http://www.myapp.com/index.php/admin/news/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=u4e3avaecsvf0khg806v803313; Hm_lvt_080836300300be57b7f34f4b3e97d911=1512877936; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1512921375',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => '欢迎扫描.jpg',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Image->qiniuUpload[ D:\wamp\www\demo\htdocs\my_app\application\admin\controller\Image.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-11T00:10:16+08:00 ] 127.0.0.1 127.0.0.1 GET /2017/12/87908201712110010154147.jpg
+[ info ] www.myapp.com/2017/12/87908201712110010154147.jpg [运行时间：0.096837s][吞吐率：10.33req/s] [内存消耗：2,849.53kb] [文件加载：51]
+[ info ] [ LANG ] D:\wamp\www\demo\htdocs\my_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '2017',
+    1 => '12',
+    2 => '87908201712110010154147.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myapp.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.0 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.myapp.com/index.php/admin/news/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=u4e3avaecsvf0khg806v803313; Hm_lvt_080836300300be57b7f34f4b3e97d911=1512877936; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1512921375',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-11T00:10:50+08:00 ] 127.0.0.1 127.0.0.1 POST /index.php/admin/image/qiniuupload.html
+[ info ] www.myapp.com/index.php/admin/image/qiniuupload.html [运行时间：0.345959s][吞吐率：2.89req/s] [内存消耗：3,886.11kb] [文件加载：60]
+[ info ] [ LANG ] D:\wamp\www\demo\htdocs\my_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'image',
+    2 => 'qiniuupload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myapp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '516850',
+  'origin' => 'http://www.myapp.com',
+  'x-requested-with' => 'ShockwaveFlash/27.0.0.187',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.0 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----------KM7GI3gL6Ij5cH2ei4GI3cH2gL6GI3',
+  'accept' => '*/*',
+  'referer' => 'http://www.myapp.com/index.php/admin/news/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=u4e3avaecsvf0khg806v803313; Hm_lvt_080836300300be57b7f34f4b3e97d911=1512877936; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1512921375',
+)
+[ info ] [ PARAM ] array (
+  'Filename' => '欢迎扫描.jpg',
+  'Upload' => 'Submit Query',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Image->qiniuUpload[ D:\wamp\www\demo\htdocs\my_app\application\admin\controller\Image.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-11T20:24:16+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/index.html
+[ info ] www.myapp.com/index.php/admin/index/index.html [运行时间：0.500495s][吞吐率：2.00req/s] [内存消耗：4,011.80kb] [文件加载：60]
+[ info ] [ LANG ] D:\wamp\www\demo\htdocs\my_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myapp.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.myapp.com/index.php/admin/login/check.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=u4e3avaecsvf0khg806v803313; Hm_lvt_080836300300be57b7f34f4b3e97d911=1512877936; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1512921375',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\wamp\www\demo\htdocs\my_app\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\demo\htdocs\my_app\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-11T20:24:16+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/admin/index/welcome.html
+[ info ] www.myapp.com/index.php/admin/index/welcome.html [运行时间：0.104577s][吞吐率：9.56req/s] [内存消耗：3,887.78kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp\www\demo\htdocs\my_app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.myapp.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.myapp.com/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=u4e3avaecsvf0khg806v803313; Hm_lvt_080836300300be57b7f34f4b3e97d911=1512877936; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1512921375',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\wamp\www\demo\htdocs\my_app\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
