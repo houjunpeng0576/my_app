@@ -23,9 +23,9 @@ use think\Route;
 //动态注册路由规则
 //Route::rule('路由表达式','路由地址','请求类型','路由参数(数组)','变量规则(数组)');
 
-Route::get('/',function(){
-    return 'Hello,world!';
-});
+//Route::get('/',function(){
+//    return 'Hello,world!';
+//});
 
 Route::get(['new','new/[:id]$'],'@index/News/read');//[]是可选项，$ 完全匹配
 //Route::miss('index/Index/miss');  //没有匹配的路由时执行
