@@ -19,7 +19,7 @@ class Base extends Controller
         //判断用户是否登录
         $isLogin = $this->isLogin();
         if(!$isLogin){
-            return $this->redirect('login/index');
+            //return $this->redirect('login/index');
         }
     }
 
