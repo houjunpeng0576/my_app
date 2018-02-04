@@ -1,12 +1,74 @@
 <?php
 namespace app\admin\controller;
+use datatables;
 
 class News extends Base {
     /*
      * 新闻首页
      */
     public function index(){
-        return $this->fetch('');
+        //接收数据
+        $param = input('param.');
+        //获取新闻分类
+        $cats = config('cat.lists');
+        //获取新闻数据
+//        模式一
+//        $news = model('News')->getNews();
+
+        //模式二
+        $whereData = [];
+        $whereData['page'] = empty($param['page']) ? 1 : $param['page'];
+        $whereData['size'] = empty($param['size']) ? config('paginate.list_rows') : $param['page'];
+
+        //获取表里面的数据
+        $news = model('News')->getNewsByCondition($whereData);
+
+        return $this->fetch('',[
+            'news' => $news,
+            'cats' => $cats
+        ]);
+    }
+
+    //datatables分页
+    public function index2(){
+        $param = input('param.');
+        $table = 'ent_news';
+        $primaryKey = 'id';
+        $columns = array(
+            array( 'db' => 'id', 'dt' => 0 ),
+            array( 'db' => 'title',  'dt' => 1 ),
+            array(
+                'db' => 'catid',
+                'dt' => 2 ,
+                'formatter' => function( $d, $cats ) {
+                    return $this->getCat($d);
+                }
+            ),
+            array( 'db' => 'image',     'dt' => 3 ),
+            array(
+                'db'        => 'is_position',
+                'dt'        => 4,
+            ),
+            array(
+                'db'        => 'update_time',
+                'dt'        => 5,
+                'formatter' => function( $d, $row ) {
+                    return date( 'Y-m-d H:i:s', $d);
+                }
+            ),
+            array(
+                'db'        => 'status',
+                'dt'        => 6,
+            )
+        );
+        $sql_details = array(
+            'user' => config('database.username'),
+            'pass' => config('database.password'),
+            'db'   => config('database.database'),
+            'host' => config('database.hostname'),
+        );
+        $ssp = new \datatables\Ssp();
+        return json_encode($ssp::simple($param,$sql_details, $table, $primaryKey, $columns));
     }
 
     /*
@@ -39,5 +101,11 @@ class News extends Base {
                 'cats' => config('cat.lists')
             ]);
         }
+    }
+
+    //获取新闻分类
+    public function getCat($key){
+        $cats = config('cat.lists');
+        return empty($cats[$key]) ? '无' : $cats[$key];
     }
 }

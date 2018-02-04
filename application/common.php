@@ -10,3 +10,10 @@
 // +----------------------------------------------------------------------
 
 // 应用公共文件
+function pagination($data){
+    if(!$data){
+        return '';
+    }
+    $params = request()->param();
+    return '<div class="my_app">'.$data->appends($params)->render().'</div>';
+}
