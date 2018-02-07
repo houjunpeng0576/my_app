@@ -9,23 +9,50 @@ class News extends Base {
     public function index(){
         //接收数据
         $param = input('param.');
-        //获取新闻分类
-        $cats = config('cat.lists');
+        $whereData = [];
+        if($catid = empty($param['catid']) ? '' : intval($param['catid'])){
+            $whereData['catid'] = $catid;
+        }
+        $start_time = empty($param['start_time']) ? '' : $param['start_time'];
+        $end_time = empty($param['end_time']) ? '' : $param['end_time'];
+        if($start_time && $end_time && $start_time < $end_time){
+            $whereData['create_time'] = [
+                ['gt',strtotime($start_time)],
+                ['lt',strtotime($end_time)]
+            ];
+        }
+        if($keywords = empty($param['keywords']) ? '' : $param['keywords']){
+            $whereData['title'] = ['like','%'.$keywords.'%'];
+        }
+
         //获取新闻数据
 //        模式一
 //        $news = model('News')->getNews();
 
         //模式二
-        $whereData = [];
-        $whereData['page'] = empty($param['page']) ? 1 : $param['page'];
-        $whereData['size'] = empty($param['size']) ? config('paginate.list_rows') : $param['page'];
+        $newsModel = model('News');
+        $newsModel->page = empty($param['page']) ? 1 : $param['page'];
+        $newsModel->size = empty($param['size']) ? config('paginate.list_rows') : $param['page'];
 
         //获取表里面的数据
-        $news = model('News')->getNewsByCondition($whereData);
+        $news = $newsModel->getNewsByCondition($whereData);
+
+        if(isset($param['page'])){
+            unset($param['page']);
+        }
+        if(isset($param['click_time'])){
+            unset($param['click_time']);
+        }
+        $query = http_build_query($param);
 
         return $this->fetch('',[
             'news' => $news,
-            'cats' => $cats
+            'cats' => config('cat.lists'),//获取新闻分类s
+            'catid' => $catid,
+            'start_time' => $start_time,
+            'end_time' => $end_time,
+            'keywords' => $keywords,
+            'query' => $query,
         ]);
     }
 
@@ -107,5 +134,38 @@ class News extends Base {
     public function getCat($key){
         $cats = config('cat.lists');
         return empty($cats[$key]) ? '无' : $cats[$key];
+    }
+
+    //文章状态修改
+    public function editStatus(){
+        //接受参数
+        $param = input('param.');
+        if(empty($param['status']) || empty($param['id'])){
+            return $this->result('',0,'缺少参数');
+        }
+        $code = config('code');
+        if(!isset($code[$param['status']])){
+            return $this->result('',0,'参数值错误');
+        }
+
+        try{
+            $res = model('News')->save(['status' => $code[$param['status']]],['id' => $param['id']]);
+        }catch (\Exception $e){
+            return $this->result('','0',$e->getMessage());
+        }
+
+        if($res){
+            return $this->result('','1','文章状态修改成功');
+        }
+
+        return $this->result('','0','文章状态修改失败');
+    }
+
+    //新闻内容展示
+    public function content($id = 0){
+        $content = model('News')->where(['id'=>$id])->value('content');
+        return $this->fetch('',[
+            'content' => $content,
+        ]);
     }
 }

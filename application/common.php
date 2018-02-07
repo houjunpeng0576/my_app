@@ -17,3 +17,19 @@ function pagination($data){
     $params = request()->param();
     return '<div class="my_app">'.$data->appends($params)->render().'</div>';
 }
+
+/**
+ * 通用化API接口数据输出
+ * @param $status   //业务状态码
+ * @param $message  //信息提示
+ * @param $data     //数据
+ * @param $httpCode //http状态码
+ */
+function show($status,$message,$data,$httpCode){
+    $returnData = [
+        'status' => $status,
+        'message' => $message,
+        'data' => $data
+    ];
+    return json($returnData,$httpCode);
+}

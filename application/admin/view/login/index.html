@@ -65,7 +65,13 @@
 <script type="text/javascript" src="__STATIC__/hui_admin/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="__STATIC__/hui_admin/static/h-ui/js/H-ui.min.js"></script>
 <script>
-    //刷新验证码
+    //防止被iframe嵌套
+    $(window).load(function(){
+        if (window.top != window.self){
+            window.top.location.href = window.self.location.href
+        }
+    })
+        //刷新验证码
     function reloadcode(obj) {
         obj.src = "/index.php/captcha?id="+Math.random;
     }

@@ -7,7 +7,14 @@
  */
 //和状态码相关的文案配置
 return [
-    'status_delete' => -1,
-    'status_normal' =>1,
-    'status_padding' => 0,
+    //常用状态
+    'status_delete' => -1,//删除状态
+    'status_normal' =>1,//正常状态
+
+    //文章状态
+    'content_failed' => -3,//文章审核未通过
+    'content_off' => -2,//文章下架状态
+    'content_delete' => -1,//文章删除状态
+    'content_normal' =>1,//文章正常(发布)状态
+    'content_padding' => 0,//文章待审核状态
 ];
