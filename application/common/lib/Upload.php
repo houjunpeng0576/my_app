@@ -22,25 +22,34 @@ class Upload{
         //要上传的文件
         $file = $_FILES['file']['tmp_name'];
 
-        //获取欧文件后缀
+        //获取文件后缀
         $ext = explode('.',$_FILES['file']['name']);
         $ext = $ext[1];
 
         $config = config('qiniu');
         //构建一个鉴权对象
         $auth = new Auth($config['ak'],$config['sk']);
-        //生成上传的token
-        $token = $auth->uploadToken($config['bucket']);
-        //上传到七牛后保存的文件名
-        $key = date('Y').'/'.date('m').'/'.substr(md5($file),0,5).date('YmdHis').rand(0,9999).'.'.$ext;
+        //生成上传的token '{"saveKey":"news/$(etag).$(ext)"}'
+        $token = $auth->uploadToken($config['bucket'],null,3600,$config['normal_policy']);
+//        //上传到七牛后保存的文件名
+//        $key = date('Y').'/'.date('m').'/'.substr(md5($file),0,5).date('YmdHis').rand(0,9999).'.'.$ext;
 
         //初始化UploadManager类
         $uploadManager = new UploadManager();
-        list($ret,$err) = $uploadManager->putFile($token,$key,$file);
+        list($ret,$err) = $uploadManager->putFile($token,null,$file);
         if($err !== null){
             return null;
         }else{
-            return $key;
+            return $ret['key'];
         }
+    }
+
+    public static function token(){
+        $config = config('qiniu');
+        //构建一个鉴权对象
+        $auth = new Auth($config['ak'],$config['sk']);
+        //生成上传的token
+        $token = $auth->uploadToken($config['bucket']);
+        return show(1,'OK',$token);
     }
 }

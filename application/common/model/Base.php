@@ -14,6 +14,8 @@ class Base extends Model
     public $map = '';
     //搜索排序
     public $order = '';
+    //需要搜索的字段
+    protected $fields = '*';
 
     /**
      * 新增
@@ -38,7 +40,8 @@ class Base extends Model
     public function search($where = [],$order = []){
         $this->map = empty($where) ? '' : $where;
         $this->order = empty($order) ? '' : $order;
-
+        $this->page = $this->page ? $this->page : 1;
+        $this->size = $this->size ? $this->size : config('paginate.list_rows');
         return $this->autoPage();
     }
 
@@ -64,7 +67,8 @@ class Base extends Model
 
         $from = ($this->page - 1) * $this->size;
 
-        $result['lists'] = $this->where($this->map)
+        $result['lists'] = $this->field($this->field)
+            ->where($this->map)
             ->order($this->order)
             ->limit($from,$this->size)
             ->select();

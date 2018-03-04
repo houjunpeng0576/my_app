@@ -17,4 +17,8 @@ return [
     'content_delete' => -1,//文章删除状态
     'content_normal' =>1,//文章正常(发布)状态
     'content_padding' => 0,//文章待审核状态
+
+    //api业务状态码
+    'api_success' => '1',
+    'api_error' => 0,
 ];

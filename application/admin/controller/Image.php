@@ -49,4 +49,8 @@ class Image extends Base
     public function show(){
         return $this->fetch();
     }
+
+    public function token(){
+        return Upload::token();
+    }
 }

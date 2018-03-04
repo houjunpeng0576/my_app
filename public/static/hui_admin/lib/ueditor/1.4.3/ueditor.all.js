@@ -7995,7 +7995,7 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
          * editor.getActionUrl('image'); //返回 "/ueditor/php/controller.php?action=uplaodimage"
          * editor.getActionUrl('scrawl'); //返回 "/ueditor/php/controller.php?action=uplaodscrawl"
          * editor.getActionUrl('imageManager'); //返回 "/ueditor/php/controller.php?action=listimage"
-         * ```
+         * ```if(action=="uploadimage"){};
          */
         getActionUrl: function(action){
             var actionName = this.getOpt(action) || action,

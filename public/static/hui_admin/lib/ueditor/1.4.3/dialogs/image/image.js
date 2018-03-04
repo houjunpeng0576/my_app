@@ -701,6 +701,15 @@
             uploader.on('uploadBeforeSend', function (file, data, header) {
                 //这里可以通过data对象添加POST参数
                 header['X_Requested_With'] = 'XMLHttpRequest';
+                $.ajax({
+                    dataType:'json',
+                    async:false,
+                    url:'http://news.pthou.com/api/upload_token?' + Math.random(),
+                    success:function (res) {
+                        data['token'] = res.data.token
+                    }
+                });
+
             });
 
             uploader.on('uploadProgress', function (file, percentage) {
@@ -717,6 +726,7 @@
                 try {
                     var responseText = (ret._raw || ret),
                         json = utils.str2json(responseText);
+
                     if (json.state == 'SUCCESS') {
                         _this.imageList.push(json);
                         $file.append('<span class="success"></span>');
