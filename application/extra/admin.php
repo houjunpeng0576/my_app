@@ -3,6 +3,6 @@
  *
  */
 return [
-    'session_user' => 'adminuser' ,
-    'session_user_scope' => 'my_app_scope',
+    'session_user' => '' ,
+    'session_user_scope' => '',
 ];
