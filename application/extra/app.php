@@ -6,6 +6,6 @@ return [
         'ios',
         'android',
     ],//设备类型
-    'app_sign_time' => 10,//sign失效时间(用于时间有效性)
+    'app_sign_time' => 10,//sign失效时间(用于时间有效性)111
     'app_sign_cache_time' => 20,//sign缓存失效时间(用于时间唯一性)
 ];
