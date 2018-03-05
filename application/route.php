@@ -36,6 +36,8 @@ Route::get('api/:version/rank','api/:version.rank/index');
 //API:七牛云上传token
 Route::get('api/upload_token','api/upload/token');
 
+//init(初始化)
+Route::get('api/:version/init','api/:version.index/init');
 
 
 //动态注册路由规则

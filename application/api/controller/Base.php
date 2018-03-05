@@ -13,7 +13,7 @@ use app\common\lib\Time;
  */
 class Base extends Controller{
     //headers信息
-    public $header = '';
+    public $headers = '';
     //初始化方法
     public function _initialize()
     {
@@ -23,10 +23,16 @@ class Base extends Controller{
 
     //检测app没次请求的数据是否合法
     public function checkRequestAuth(){
-        return true;
         //首先需要获取headers的数据
         $headers = request()->header();
-
+        //FdjP4J0wngyHF3oOqOkHJjGwWLWEiGsgeRf5IUeXtVSlQoSheNcSxkhpLTw9p8yiJU2TZileHgIRKe3FQyGuLw==
+//        $data = [
+//            'model' => 'sanxing5.6',
+//            'version' => 1,
+//            'app-type' => 'android',
+//            'did' => '123456'
+//        ];
+//        echo IAuth::setSign($data);die;
         //基础参数校验
         if(empty($headers['sign'])){
             throw new ApiException('sign不存在',400);
@@ -44,7 +50,7 @@ class Base extends Controller{
         //将sign存入缓存用于唯一性判断
         Cache::set($headers['sign'],1,config('app.app_sign_cache_time'));
 
-        $this->header = $headers;
+        $this->headers = $headers;
     }
 
     public function testAes(){

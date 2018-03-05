@@ -46,9 +46,13 @@ class IAuth
         }
 
         parse_str($str,$arr);
-
-        if(!is_array($arr) || $arr['model'] != $data['model']){
+        if(!is_array($arr)){
             return false;
+        }
+        foreach ($arr as $key => $value){
+            if($arr[$key] != $data[$key]){
+                return false;
+            }
         }
 
         //app_dubug为true时不验证时间有效性和时间唯一性
