@@ -3,3 +3,7 @@ composer.lock
 *.log
 thinkphp
 runtime
+public/ueditor/
+application/extra/app.php
+application/extra/qiniu.php
+application/database.php
