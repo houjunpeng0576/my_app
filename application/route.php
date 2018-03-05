@@ -28,8 +28,6 @@ Route::get('api/:version/index','api/:version.index/index');
 //news
 Route::resource('api/:version/news','api/:version.news');
 
-//新闻详情
-
 //rank(排行)
 Route::get('api/:version/rank','api/:version.rank/index');
 
@@ -38,6 +36,11 @@ Route::get('api/upload_token','api/upload/token');
 
 //init(初始化)
 Route::get('api/:version/init','api/:version.index/init');
+
+//发送短信
+Route::get('api/sendsms','api/sms/send');
+//短信验证码相关
+Route::resource('api/:version/identify','api/:version.identify');
 
 
 //动态注册路由规则

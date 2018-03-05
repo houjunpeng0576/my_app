@@ -25,7 +25,7 @@ function pagination($data){
  * @param $data     //数据
  * @param $httpCode //http状态码
  */
-function show($status,$message,$data,$httpCode = '200'){
+function show($status,$message,$data = [],$httpCode = '200'){
     $returnData = [
         'status' => $status,
         'message' => $message,
