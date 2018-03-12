@@ -50,6 +50,10 @@ class ComposerStaticInit0e5a20f54bf215fd957bc14489129d05
         array (
             'Phinx\\' => 6,
         ),
+        'J' => 
+        array (
+            'JPush\\' => 6,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -120,6 +124,10 @@ class ComposerStaticInit0e5a20f54bf215fd957bc14489129d05
         'Phinx\\' => 
         array (
             0 => __DIR__ . '/..' . '/topthink/think-migration/phinx/src/Phinx',
+        ),
+        'JPush\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jpush/jpush/src/JPush',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
