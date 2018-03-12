@@ -5,7 +5,7 @@ use think\Cache;
 use think\Log;
 
 class SendSms{
-    const LOG_TPL = 'aliyun-sms：';
+    const LOG_TPL = "---------------------------------------------------------------\naliyun-sms：";
     /**私有静态变量保存全局的实例
      * @var null
      */
@@ -94,7 +94,7 @@ class SendSms{
             );
         }catch (\Exception $e){
             //写入日志
-            Log::write("---------------------------------------------------------------\n".self::LOG_TPL."set------".$e->getMessage());
+            Log::write(self::LOG_TPL."set------".$e->getMessage());
             return false;
         }
 
@@ -111,11 +111,11 @@ class SendSms{
      * 根据手机号码查看验证码是否正常
      * @param int $phone
      */
-    public function checkSmsIdentify($phone = 0){
-        if(!$phone){
+    public function checkSmsIdentify($phone = 0,$code = 0){
+        if(!$phone || !$code || Cache::get($phone) != $code){
             return false;
         }
 
-        return Cache::get($phone);
+        return true;
     }
 }

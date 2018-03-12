@@ -37,10 +37,31 @@ Route::get('api/upload_token','api/upload/token');
 //init(初始化)
 Route::get('api/:version/init','api/:version.index/init');
 
-//发送短信
-Route::get('api/sendsms','api/sms/send');
 //短信验证码相关
 Route::resource('api/:version/identify','api/:version.identify');
+
+//登陆接口
+Route::post('api/:version/login','api/:version.login/save');
+
+//user
+Route::resource('api/:version/user','api/:version.user');
+
+//检测用户名是否唯一
+Route::get('api/:version/check_username','api/:version.user/checkUsername');
+
+//图片上传
+Route::post('api/:version/image','api/:version.image/save');
+
+//点赞
+Route::post('api/:version/upvote','api/:version.upvote/save');
+//取消点赞
+Route::delete('api/:version/upvote','api/:version.upvote/delete');
+//是否点赞
+Route::get('api/:version/upvote/:id','api/:version.upvote/read');
+
+//评论
+Route::post('api/:version/comment','api/:version.comment/save');
+Route::get('api/:version/comment/:id','api/:version.comment/read');
 
 
 //动态注册路由规则

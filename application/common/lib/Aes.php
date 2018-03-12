@@ -11,7 +11,7 @@ class Aes {
     private static $method = 'AES-128-ECB';
     /**
      * 加密
-     * @param string $input 需要加密的字符串
+     * @param string $input 需要加密的字符串(可以是字符串和对象，不可以是数组)
      * @param string $key 解密的key
      */
     public static function encrypt($input = ''){

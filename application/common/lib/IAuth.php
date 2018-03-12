@@ -20,6 +20,7 @@ class IAuth
 
     /**
      * 生成每次请求的sign
+     * 安全性问题：时间有效性、唯一性、时间一致性（一致性可以通过返回给客户端time，客户端加上对比的时间差来解决）
      * @param array $data
      * @return string
      */
@@ -69,5 +70,14 @@ class IAuth
         }
 
         return true;
+    }
+
+    /**
+     * 设置登录的token  唯一的
+     * @param string $phone
+     */
+    public static function setAppLoginToken($phone = ''){
+        $token = md5(uniqid(md5(microtime(true)),true));
+        return sha1($token.$phone);
     }
 }

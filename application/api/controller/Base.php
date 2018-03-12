@@ -1,5 +1,6 @@
 <?php
 namespace app\api\controller;
+use app\common\lib\Aes;
 use app\common\lib\exception\ApiException;
 use think\Cache;
 use think\Controller;
@@ -53,15 +54,6 @@ class Base extends Controller{
         $this->headers = $headers;
     }
 
-    public function testAes(){
-        $data = [
-            'model' => 'ios',
-            'did' => '123456',
-            'time' => Time::get13TimeStamp(),
-        ];
-//        echo IAuth::setSign($data);die;
-    }
-
     /**
      * 获取处理的新闻内容的数据
      * @param array $news
@@ -90,5 +82,13 @@ class Base extends Controller{
             $news[$key]['image'] = $value['image'].'-small';
         }
         return $news;
+    }
+
+    /**
+     * 获取raw数据并进行解密
+     * @return bool|string
+     */
+    public function input(){
+        return json_decode(Aes::decrypt(file_get_contents("php://input")),true);
     }
 }

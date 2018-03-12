@@ -11,7 +11,7 @@ class Identify extends Base{
         //校验数据
         $validate = validate('Identify');
         $data = input('post.');
-        if(!$validate->check($data)){
+        if(!$validate->scene('sendIdentify')->check($data)){
             return show(config('code.api_error'),$validate->getError(),[],403);
         }
 
